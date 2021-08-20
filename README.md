@@ -61,11 +61,17 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 
 
 - Create and use external Airtable api 
+- Utilize React Router, installed via NPM.
+- Implement an organized and understandable React file structure.
 - Working nav on homepage 
-- Successfully render data according to page 
-- Successfully delete data from page & update Airtable
-- Use forms to create and update Airtable
-- Use of CSS styling 
+- Successfully render data according to component 
+- Use Axios to consume data from Airtable, and GET/render that data in your components.
+- Use Axios to POST/create new data on Airtable.
+- Use Axios to either PUT/update & DELETE to Airtable 
+- Use of CSS styling/Styled components 
+- Use flexbox or CSS Grid
+- Implement responsive design on 2 screen sizes, using a media query
+- Deploy via Netlify.
 
 
 #### PostMVP  
@@ -78,8 +84,8 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 19-20| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 20| Create Airtable / Project Approval | Incomplete
+|August 19-20| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|August 20| Create Airtable / Project Approval | Complete
 |August 23| Pseudocode / actual code / Component Creation / Get, Set, Delete Data | Incomplete
 |August 24| CSS Components | Incomplete
 |August 25| Initial Clickable Model / MVP |Incomplete
@@ -106,12 +112,4 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 | Testing                   |    H     |      3hrs      |               |             |
 | Total                     |    H     |      57hrs     |    17.5 hrs   |             |
 
-## SWOT Analysis
 
-### Strengths:
-
-### Weaknesses:
-
-### Opportunities:
-
-### Threats:
