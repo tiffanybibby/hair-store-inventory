@@ -1,2 +1,0 @@
-# Hair Store Inventory
-
