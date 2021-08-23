@@ -86,7 +86,7 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 |---|---| ---|
 |August 19-20| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 20| Create Airtable / Project Approval | Complete
-|August 23| Pseudocode / actual code / Component Creation / Get, Set, Delete Data | Incomplete
+|August 23| Pseudocode / actual code / Component Creation / Get, Set, Delete Data | Complete
 |August 24| CSS Components | Incomplete
 |August 25| Initial Clickable Model / MVP |Incomplete
 |August 26| Advanced CSS | Incomplete
@@ -99,9 +99,9 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 | Proposal                  |    H     |      8hrs      |     16hrs     |             |
 | Airtable setup            |    H     |      1hr       |     1.5hrs    |             |
 | Pseudocode                |    H     |      2hrs      |               |             |
-| Clickable icons           |    H     |      4hrs      |               |             |
-| Data population           |    H     |      5hrs      |               |             |
-| Form creation             |    H     |      4hrs      |               |             |
+| Clickable icons           |    H     |      4hrs      |      4hrs     |             |
+| Data population           |    H     |      5hrs      |      5hrs     |             |
+| Form creation             |    H     |      4hrs      |      3hrs     |             |
 | Data editing              |    H     |      3hrs      |               |             |
 | Data creation             |    H     |      5hrs      |               |             |
 | Data deletion             |    H     |      2hrs      |               |             |
@@ -110,6 +110,6 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 | Polishing Design          |    H     |      3hrs      |               |             |
 | Debugging                 |    H     |      5hrs      |               |             |
 | Testing                   |    H     |      3hrs      |               |             |
-| Total                     |    H     |      57hrs     |    17.5 hrs   |             |
+| Total                     |    H     |      57hrs     |    29.5 hrs   |             |
 
 
