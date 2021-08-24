@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { baseURL, config } from '../services'
 import axios from 'axios'
 import { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 
 function Wefts(props) {
   const [name, setName] = useState('')
@@ -12,6 +12,7 @@ function Wefts(props) {
   const [image, setImage] = useState('')
 
   const params = useParams()
+  const history = useHistory()
   
   useEffect(() => {
     if (params.id && props.wefts.length > 0) {
@@ -31,6 +32,7 @@ function Wefts(props) {
 
   const handleDelete = async (event) => {
     await axios.delete(`${baseURL}/${params.id}`, config)
+    history.push(`/wefts`)
     props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
     } 
   return (
@@ -40,6 +42,7 @@ function Wefts(props) {
       <p>{length}</p>
       <p>{price}</p>
       <img src={image} alt="weft" />
+      <br/>
       <button onClick={handleDelete}>Delete</button>
       <br/>
       <Link to={`/edit/${params.id}`}>

@@ -6,6 +6,7 @@ import { baseURL, config } from "./services";
 import './App.css';
 import Wefts from "./components/Wefts";
 import Form from "./components/Form.jsx";
+import Bootstrap from './components/Bootstrap';
 
 function App() {
   const [wefts, setWefts] = useState([]);
@@ -23,10 +24,11 @@ function App() {
 
   return (
     <>
-      <nav>
+      <Bootstrap />
+      {/* <nav>
         <Link to="/">Home</Link> <br/>
         <Link to="/new">Add Product</Link>
-      </nav>
+      </nav> */}
       <Route path="/" exact>
       <button type='submit'onClick={() => window.location.href = "/wefts"}>All Wefts</button>
       </Route>
