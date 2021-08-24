@@ -13,7 +13,7 @@ export default function Bootstrap() {
       <Navbar.Brand href="/">
         <img
           alt=""
-          src="https://github.com/tiffanybibby/hair-store-inventory/blob/main/assets/tdlogo.png?raw=true"
+          src="https://github.com/tiffanybibby/hair-store-inventory/blob/main/assets/tdlogo1.png?raw=true"
           width="230"
           height="230"
           className="d-inline-block align-top"
