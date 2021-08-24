@@ -8,34 +8,14 @@ export default function Bootstrap() {
   // }
   return (<>
     <>
-  <Navbar bg="dark">
-    <Container>
-      <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-    </Container>
-  </Navbar>
-  <br />
-  <Navbar bg="dark">
-  <Container>
-    <Navbar.Brand href="#home">
-      <img
-        src="https://github.com/tiffanybibby/hair-store-inventory/blob/main/assets/tdlogo.png?raw=true" 
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-        alt="React Bootstrap logo"
-      />
-    </Navbar.Brand>
-  </Container>
-  </Navbar>
-  <br />
   <Navbar bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
         <img
           alt=""
-          src="/logo.svg"
-          width="30"
-          height="30"
+          src="https://github.com/tiffanybibby/hair-store-inventory/blob/main/assets/tdlogo.png?raw=true"
+          width="230"
+          height="230"
           className="d-inline-block align-top"
         />{' '}
       React Bootstrap
