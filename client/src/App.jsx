@@ -99,7 +99,7 @@ function App() {
                 {wefts.map((weft, index) => (
                   <React.Fragment key={index}>
                     <Col>
-                      <Card style={{ height: "100%", width: "100%"}}>
+                      <Card style={{ height: "100%"}}>
                         <Card.Img
                           variant="top"
                           src={weft.fields.image}
@@ -110,7 +110,7 @@ function App() {
                           <Button
                             variant="primary"
                             type="submit"
-                            style={{ width: "100%" }}
+                            style={{ marginTop: "5px", width: "100%" }}
                             onClick={() => (window.location.href = `/wefts/${weft.id}`)}
                           >
                             View Details
