@@ -40,7 +40,7 @@ function Wefts(props) {
   }
   return (
     <>
-<div style={{ padding: "60px", width: "100%" }}>
+<div style={{ margin: "auto", width: "70%" }}>
       <CardGroup>
           <Card style={{ textAlign: "center" }} >
           <Card.Img variant="top" src={image} />
