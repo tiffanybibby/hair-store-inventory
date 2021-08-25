@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios'
 import { baseURL, config } from '../services'
 import { useParams, useHistory } from 'react-router-dom'
-import { Form, Button } from "react-bootstrap"
+import { Form, Button, Container } from "react-bootstrap"
 
 function Forms(props) {
   const [name, setName] = useState('')
@@ -50,8 +50,8 @@ function Forms(props) {
     
   }
   return (
-
-<Form onSubmit={handleSubmit}>
+<Container>
+    <Form onSubmit={handleSubmit} style={{margin:"20px"}}>
   <Form.Group className="mb-3" controlId="formBasicName">
     <Form.Label>Name</Form.Label>
     <Form.Control type="text" placeholder="Enter Name of Product" value={name}  onChange={e => setName(e.target.value)}/>
@@ -75,7 +75,8 @@ function Forms(props) {
   <Button variant="primary" type="submit">
     Submit
   </Button>
-</Form>
+      </Form>
+      </Container>
   
   )
   

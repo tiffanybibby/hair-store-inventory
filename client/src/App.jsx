@@ -9,7 +9,8 @@ import Forms from "./components/Forms.jsx";
 import Bootstrap from "./components/Bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import StyledComponents from "./components/StyledComponents";
-import { CardGroup, Card, Button } from "react-bootstrap";
+import { CardGroup, Card, Button, Row, Col } from "react-bootstrap";
+import handleDelete from "./components/Wefts"
 
 function App() {
   const [wefts, setWefts] = useState([]);
@@ -33,8 +34,8 @@ function App() {
         <br/>
         <br />
         <br/>
-        <CardGroup>
-          <Card>
+        {/* <CardGroup style={{ padding: "50px"}}>
+          <Card style={{ marginRight: "20px"}}>
             <Card.Img
               variant="top"
               src="https://cdn.accentuate.io/74441857/1611603969512/collection-human-hair-wefts.jpg?v=0"
@@ -53,11 +54,11 @@ function App() {
                 All Wefts
               </Button>
             </Card.Body>
-          </Card>
+          </Card> */}
 
           {/* post mvp */}
 
-          <Card>
+          {/* <Card style={{ marginLeft: "20px" , borderLeftWidth: "1px" }}>
             <Card.Img
               variant="top"
               src="https://cdn.shopify.com/s/files/1/2465/8681/products/4x4-wig-bw-n2_820x.jpg?v=1629353593"
@@ -77,15 +78,155 @@ function App() {
               </Button>
             </Card.Body>
           </Card>
-        </CardGroup>
+        </CardGroup> */}
+
+<Row xs={2} md={1} className="g-4" style={{ margin: "50px"}}>
+          {Array.from({ length: 1 }).map((_, idx) => (
+    <>
+    <Col>
+      <Card style={{height:"100%"}}>
+            <Card.Img
+              variant="top"
+              src="https://cdn.accentuate.io/74441857/1611603969512/collection-human-hair-wefts.jpg?v=0"
+            />
+            <Card.Body>
+              <Card.Title style={{ marginBottom: "20px", width: "100%" , height:"40px"}}>Wefts</Card.Title>
+              <Card.Text >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+              <Button
+                variant="primary"
+                type="submit"
+                      onClick={() => (window.location.href = "/wefts")}
+                      style={{ marginTop: "5px", width: "100%" }}
+              >
+                All Wefts
+              </Button>
+            </Card.Body>
+      </Card>
+      </Col>
+    <Col>
+      <Card>
+            <Card.Img
+              variant="top"
+              src="https://cdn.shopify.com/s/files/1/2465/8681/products/4x4-wig-bw-n2_820x.jpg?v=1629353593"
+            />
+            <Card.Body>
+              <Card.Title style={{ marginBottom: "20px", width: "100%" , height:"40px"}}>Wigs (Post MVP)</Card.Title>
+              <Card.Text>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+              <Button
+                variant="primary"
+                type="submit"
+                      onClick={() => (window.location.href = "/")}
+                      style={{ marginTop: "5px", width: "100%" }}
+              >
+                All Wigs
+              </Button>
+            </Card.Body>
+          </Card>
+
+
+
+
+              </Col>
+              </>
+  ))}
+</Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </Route>
       <br />
       <Route path="/wefts" exact>
-        {wefts.map((weft, index) => (
+        <>
+          <div style={{ margin: "auto", width: "20%"}}>
+          <h2>All Wefts</h2>
+        </div>
+        {/* {wefts.map((weft, index) => (
           <React.Fragment key={index}>
             <Link to={`/wefts/${weft.id}`}>{weft.fields.name}</Link> <br />
           </React.Fragment>
-        ))}
+        ))} */}
+
+<Row xs={3} md={3} className="g-4" style={{ margin: "50px"}}>
+          {Array.from({ length: 1 }).map((_, idx) => (
+    <>
+                
+                  
+                {wefts.map((weft, index) => (  
+                  <React.Fragment key={index}>
+            <Col>
+                    <Card style={{height: "100%" }}>
+
+                    
+                        <Card.Img
+                          variant="top"
+                          src={weft.fields.image}
+                          style={{height:"100%"}}
+              />
+            <Card.Body>
+              <Card.Title style={{ marginBottom: "20px", width: "100%" , height:"40px"}} >{weft.fields.name}</Card.Title>
+              <Button
+                variant="primary"
+                            type="submit"
+                            style={{ marginTop: "10px", width: "100%" }} 
+                onClick={() => (window.location.href = `/wefts/${weft.id}`)}
+                >
+                View Details
+                          </Button>
+                          
+                          <Button style={{ marginTop: "5px", width: "100%" }} onClick={handleDelete}>Delete</Button>
+            </Card.Body>
+      </Card>
+      </Col>
+                </React.Fragment>
+              ))}
+    
+              </>
+  ))}
+</Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</>
+
+
+
+
       </Route>
       <Route path="/wefts/:id">
         <Wefts wefts={wefts} setToggleFetch={setToggleFetch} />
