@@ -30,7 +30,7 @@ function App() {
       <nav><Bootstrap /></nav>
       <Route path="/" exact>
         <div style={{ margin: "auto", width: "70%" }}>
-        <Row xs={1} md={2} className="g-4" style={{ margin: "100px"}}>
+        <Row xs={1} md={2} className="g-4" style={{ margin: "10px"}}>
           {Array.from({ length: 1 }).map((_, idx) => (
             <>
               <Col>
@@ -89,7 +89,7 @@ function App() {
       <br />
       <Route path="/wefts" exact>
         <>
-          <div style={{ margin: "auto", width: "15%" }}>
+          <div style={{ margin: "auto", width: "100%", paddingLeft:"35%" }}>
             <h2>All Wefts</h2>
           </div>
           <div style={{ margin: "auto", width: "80%" }}>
