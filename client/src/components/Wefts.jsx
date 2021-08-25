@@ -40,28 +40,26 @@ function Wefts(props) {
   }
   return (
     <>
-
-      <CardGroup style={{ padding: "50px" }}>
-        <Card style={{ width: '20rem' }}>
+<div style={{ padding: "60px", width: "100%" }}>
+      <CardGroup>
+          <Card style={{ textAlign: "center" }} >
           <Card.Img variant="top" src={image} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroupItem>${price}</ListGroupItem>
             <ListGroupItem>
               <DropdownButton id="dropdown-button-dark" variant="secondary" size="sm" menuVariant="light" title="Length">
                 <Dropdown.Item> 10 inch</Dropdown.Item>
                 <Dropdown.Item> 12 inch</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
               </DropdownButton>
-
-
             </ListGroupItem>
+            <ListGroupItem>${price}</ListGroupItem>
           </ListGroup>
         </Card>
 
-        <Card style={{ width: '20rem' }}>
+        <Card >
           <Card.Body>
             <Card.Title>Description</Card.Title>
             <Card.Text>
@@ -71,12 +69,12 @@ function Wefts(props) {
           <ListGroup className="list-group-flush">
             {/* <ListGroupItem>{type}</ListGroupItem> */}
           </ListGroup>
-          <Card.Body>
+            
             <Button
               variant="primary"
               type="submit"
               onClick={() => (window.location.href = `/edit/${params.id}`)}
-              style={{ marginTop: "5px", width: "100%" }}
+              style={{ marginTop: "0px", width: "100%" }}
             >
               Edit Product
             </Button>
@@ -88,10 +86,10 @@ function Wefts(props) {
             >
               Delete Product
             </Button>
-          </Card.Body>
+       
         </Card>
       </CardGroup>
-
+      </div>
     </>
 
   )

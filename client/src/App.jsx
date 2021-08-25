@@ -89,7 +89,7 @@ function App() {
       <br />
       <Route path="/wefts" exact>
         <>
-          <div style={{ margin: "auto", width: "100%", paddingLeft:"35%" }}>
+          <div style={{ margin: "auto",  textAlign:"center" }}>
             <h2>All Wefts</h2>
           </div>
           <div style={{ margin: "auto", width: "80%" }}>
@@ -106,7 +106,7 @@ function App() {
                           style={{ height: "100%" }}
                         />
                         <Card.Body>
-                          <Card.Title style={{ marginBottom: "20px", width: "100%", height: "40px" }} >{weft.fields.name}</Card.Title>
+                          <Card.Title style={{ marginBottom: "20px", width: "100%", height: "40px", textAlign:"center" }} >{weft.fields.name}</Card.Title>
                           <Button
                             variant="primary"
                             type="submit"
