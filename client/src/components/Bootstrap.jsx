@@ -1,11 +1,11 @@
-import { Navbar, Container, Nav, NavDropdown, Link } from "react-bootstrap"
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
 
 export default function Bootstrap() {
 
   return (<>
     <>
-      <Navbar bg="light" variant="light" expand="lg">
-        <Container>
+      <Navbar bg="light" variant="light" expand="sm">
+        <Container style={{width:"70%"}}>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -18,7 +18,9 @@ export default function Bootstrap() {
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
               </NavDropdown>
             </Nav>
-          </Navbar.Collapse>
+            </Navbar.Collapse>
+        </Container>
+        <Container style={{width:"30%"}} className="justify-content-end">
           <Navbar.Brand href="/">
             <img
               alt=""
@@ -26,9 +28,9 @@ export default function Bootstrap() {
               width="120"
               height="80"
               className="d-inline-block align-top"
-            />{' '}
+              />{' '}
           </Navbar.Brand>
-        </Container>
+          </Container>
       </Navbar>
     </>
 

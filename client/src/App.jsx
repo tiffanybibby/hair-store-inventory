@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import "./App.css";
 import Wefts from "./components/Wefts";
@@ -9,7 +9,7 @@ import Forms from "./components/Forms.jsx";
 import Bootstrap from "./components/Bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button, Row, Col } from "react-bootstrap";
-import handleDelete from "./components/Wefts"
+
 
 function App() {
   const [wefts, setWefts] = useState([]);
@@ -29,7 +29,7 @@ function App() {
     <>
       <nav><Bootstrap /></nav>
       <Route path="/" exact>
-        <div style={{ margin: "auto", width: "70%" }}>
+        <div style={{ margin: "auto", width: "60%" }}>
         <Row xs={1} md={2} className="g-4" style={{ margin: "10px"}}>
           {Array.from({ length: 1 }).map((_, idx) => (
             <>
@@ -92,7 +92,7 @@ function App() {
           <div style={{ margin: "auto",  textAlign:"center" }}>
             <h2>All Wefts</h2>
           </div>
-          <div style={{ margin: "auto", width: "80%" }}>
+          <div style={{ margin: "auto", width: "70%" }}>
           <Row xs={1} md={3} className="g-4" style={{ margin: "10px" }}>
             {Array.from({ length: 1 }).map((_, idx) => (
               <>

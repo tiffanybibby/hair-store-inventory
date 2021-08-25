@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { baseURL, config } from '../services'
 import axios from 'axios'
 import { useState, useEffect } from "react";
@@ -40,7 +39,7 @@ function Wefts(props) {
   }
   return (
     <>
-<div style={{ margin: "auto", width: "70%" }}>
+<div style={{ margin: "auto", width: "60%" }}>
       <CardGroup>
           <Card style={{ textAlign: "center" }} >
           <Card.Img variant="top" src={image} />
