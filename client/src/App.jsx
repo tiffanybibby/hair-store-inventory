@@ -89,10 +89,11 @@ function App() {
       <br />
       <Route path="/wefts" exact>
         <>
-          <div style={{ margin: "auto", width: "20%" }}>
+          <div style={{ margin: "auto", width: "15%" }}>
             <h2>All Wefts</h2>
           </div>
-          <Row xs={1} md={2} className="g-4" style={{ margin: "100px" }}>
+          <div style={{ margin: "auto", width: "80%" }}>
+          <Row xs={1} md={3} className="g-4" style={{ margin: "10px" }}>
             {Array.from({ length: 1 }).map((_, idx) => (
               <>
                 {wefts.map((weft, index) => (
@@ -124,6 +125,7 @@ function App() {
               </>
             ))}
           </Row>
+        </div>
         </>
       </Route>
       <Route path="/wefts/:id">
