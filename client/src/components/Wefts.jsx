@@ -15,7 +15,7 @@ function Wefts(props) {
 
   const params = useParams()
   const history = useHistory()
-  
+
   useEffect(() => {
     if (params.id && props.wefts.length > 0) {
       console.log("inside useEffect of Wefts component")
@@ -37,79 +37,63 @@ function Wefts(props) {
     await axios.delete(`${baseURL}/${params.id}`, config)
     history.push(`/wefts`)
     props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
-    } 
+  }
   return (
     <>
 
-    <CardGroup style={{ padding: "50px"}}>
-<Card style={{ width: '20rem' }}>
-  <Card.Img variant="top" src={image} />
-  <Card.Body>
-    <Card.Title>{name}</Card.Title>
-  </Card.Body>
-  <ListGroup className="list-group-flush">
-    <ListGroupItem>${price}</ListGroupItem>
+      <CardGroup style={{ padding: "50px" }}>
+        <Card style={{ width: '20rem' }}>
+          <Card.Img variant="top" src={image} />
+          <Card.Body>
+            <Card.Title>{name}</Card.Title>
+          </Card.Body>
+          <ListGroup className="list-group-flush">
+            <ListGroupItem>${price}</ListGroupItem>
             <ListGroupItem>
-            <DropdownButton id="dropdown-button-dark" variant="secondary" size="sm" menuVariant="light" title="Length">
-  <Dropdown.Item> 10 inch</Dropdown.Item>
-  <Dropdown.Item> 12 inch</Dropdown.Item>
-  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-</DropdownButton>
-            
-            
+              <DropdownButton id="dropdown-button-dark" variant="secondary" size="sm" menuVariant="light" title="Length">
+                <Dropdown.Item> 10 inch</Dropdown.Item>
+                <Dropdown.Item> 12 inch</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </DropdownButton>
+
+
             </ListGroupItem>
-  </ListGroup>
+          </ListGroup>
         </Card>
 
-
-
-
-
-        <Card style={{ width: '18rem' }}>
-  <Card.Body>
+        <Card style={{ width: '20rem' }}>
+          <Card.Body>
             <Card.Title>Description</Card.Title>
-    <Card.Text>
-{description}
-    </Card.Text>
-  </Card.Body>
-  <ListGroup className="list-group-flush">
-    {/* <ListGroupItem>{type}</ListGroupItem> */}
-  </ListGroup>
-  <Card.Body>
-          <Button
-                variant="primary"
-                type="submit"
-                      onClick={() => (window.location.href = `/edit/${params.id}`)}
-                      style={{ marginTop: "5px", width: "100%" }}
-              >
-                Edit Product
-          </Button>
-          <Button
-                variant="primary"
-                type="submit"
-                      onClick={handleDelete}
-                      style={{ marginTop: "5px", width: "100%" }}
-              >
-                Delete Product
-              </Button>
-  </Card.Body>
-</Card>
-</CardGroup>
-    
+            <Card.Text>
+              {description}
+            </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush">
+            {/* <ListGroupItem>{type}</ListGroupItem> */}
+          </ListGroup>
+          <Card.Body>
+            <Button
+              variant="primary"
+              type="submit"
+              onClick={() => (window.location.href = `/edit/${params.id}`)}
+              style={{ marginTop: "5px", width: "100%" }}
+            >
+              Edit Product
+            </Button>
+            <Button
+              variant="primary"
+              type="submit"
+              onClick={handleDelete}
+              style={{ marginTop: "5px", width: "100%" }}
+            >
+              Delete Product
+            </Button>
+          </Card.Body>
+        </Card>
+      </CardGroup>
+
     </>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
   )
 }
 
