@@ -29,6 +29,7 @@ function App() {
     <>
       <nav><Bootstrap /></nav>
       <Route path="/" exact>
+        <div style={{ margin: "auto", width: "70%" }}>
         <Row xs={1} md={2} className="g-4" style={{ margin: "100px"}}>
           {Array.from({ length: 1 }).map((_, idx) => (
             <>
@@ -80,7 +81,8 @@ function App() {
               </Col>
             </>
           ))}
-        </Row>
+          </Row>
+          </div>
 
 
       </Route>
