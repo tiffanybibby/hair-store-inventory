@@ -103,10 +103,10 @@ function App() {
                         <Card.Img
                           variant="top"
                           src={weft.fields.image}
-                          style={{ height: "100%" }}
+                          style={{ height: "60%", width: "100%" }}
                         />
                         <Card.Body>
-                          <Card.Title style={{ marginBottom: "20px", width: "100%", height: "40px", textAlign:"center" }} >{weft.fields.name}</Card.Title>
+                          <Card.Title style={{ margin: "20px 0px", width: "100%", height: "40px", textAlign:"center" }} >{weft.fields.name}</Card.Title>
                           <Button
                             variant="primary"
                             type="submit"
