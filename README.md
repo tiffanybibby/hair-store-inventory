@@ -68,7 +68,7 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 - Use Axios to consume data from Airtable, and GET/render that data in your components.
 - Use Axios to POST/create new data on Airtable.
 - Use Axios to either PUT/update & DELETE to Airtable 
-- Use of CSS styling/Styled components 
+- Use of CSS styling/Styled components/Component library 
 - Use flexbox or CSS Grid
 - Implement responsive design on 2 screen sizes, using a media query
 - Deploy via Netlify.
@@ -86,10 +86,10 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 |---|---| ---|
 |August 19-20| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 20| Create Airtable / Project Approval | Complete
-|August 23| Pseudocode / actual code / Component Creation / Get, Set, Delete Data | Complete
-|August 24| CSS Components | Incomplete
-|August 25| Initial Clickable Model / MVP |Incomplete
-|August 26| Advanced CSS | Incomplete
+|August 23| Pseudocode / Actual Code / Component Creation / Get, Set, Delete Data | Complete
+|August 24| CSS Components | Complete
+|August 25| Initial Clickable Model / MVP | Complete
+|August 26| Advanced Styling / Testing / Debugging | Complete
 |August 27| Presentations | Incomplete
 
 ## Timeframes
@@ -98,18 +98,18 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      8hrs      |     16hrs     |             |
 | Airtable setup            |    H     |      1hr       |     1.5hrs    |             |
-| Pseudocode                |    H     |      2hrs      |               |             |
+| Pseudocode                |    H     |      2hrs      |      2hrs      |             |
 | Clickable icons           |    H     |      4hrs      |      4hrs     |             |
 | Data population           |    H     |      5hrs      |      5hrs     |             |
 | Form creation             |    H     |      4hrs      |      3hrs     |             |
-| Data editing              |    H     |      3hrs      |               |             |
-| Data creation             |    H     |      5hrs      |               |             |
-| Data deletion             |    H     |      2hrs      |               |             |
-| CSS Styling               |    H     |      8hrs      |               |             |
-| Organizing code           |    H     |      4hrs      |               |             |
-| Polishing Design          |    H     |      3hrs      |               |             |
-| Debugging                 |    H     |      5hrs      |               |             |
-| Testing                   |    H     |      3hrs      |               |             |
-| Total                     |    H     |      57hrs     |    29.5 hrs   |             |
+| Data editing              |    H     |      3hrs      |      8hrs     |             |
+| Data creation             |    H     |      5hrs      |     4hrs       |             |
+| Data deletion             |    H     |      2hrs      |       8hrs     |             |
+| Component Library Styling |    H     |      8hrs      |    20hrs       |             |
+| Organizing code           |    H     |      4hrs      |      2hrs      |             |
+| Polishing Design          |    H     |      3hrs      |       4hrs     |             |
+| Debugging                 |    H     |      5hrs      |     3hrs       |             |
+| Testing                   |    H     |      3hrs      |       2hrs     |             |
+| Total                     |    H     |      57hrs     |    82.5 hrs   |             |
 
 
