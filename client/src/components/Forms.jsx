@@ -61,7 +61,7 @@ function Forms(props) {
     <Form.Control as="textarea" rows={3} placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} />
         </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicLength">
-    <Form.Label>Name</Form.Label>
+    <Form.Label>Length</Form.Label>
     <Form.Control type="text" placeholder="Enter Length of Product" value={length}  onChange={e => setLength(e.target.value)}/>
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicPrice">
