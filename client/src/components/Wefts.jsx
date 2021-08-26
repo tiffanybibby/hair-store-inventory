@@ -11,6 +11,8 @@ function Wefts(props) {
   const [price, setPrice] = useState('')
   const [image, setImage] = useState('')
   // const [type, setType] = useState('')
+  const [value, setValue] = useState(0)
+  console.log(value)
 
   const params = useParams()
   const history = useHistory()
@@ -36,7 +38,15 @@ function Wefts(props) {
     await axios.delete(`${baseURL}/${params.id}`, config)
     history.push(`/wefts`)
     props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
+
   }
+  
+  const handleSelect= (e)=>{
+    console.log(e.target.textContent);
+    setValue(e.target.textContent)
+    console.log(value)
+  }
+  
   return (
     <>
 <div style={{ margin: "auto", width: "60%" }}>
@@ -48,10 +58,10 @@ function Wefts(props) {
           </Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroupItem>
-              <DropdownButton id="dropdown-button-dark" variant="secondary" size="sm" menuVariant="light" title="Length">
-                <Dropdown.Item> 10 inch</Dropdown.Item>
-                <Dropdown.Item> 12 inch</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <DropdownButton id="dropdown-button-dark" variant="secondary" size="sm" menuVariant="light" title={(value === 0) ? "Length" : value } > 
+                <Dropdown.Item onClick={handleSelect}> 10 inch</Dropdown.Item>
+                <Dropdown.Item onClick={handleSelect}> 12 inch</Dropdown.Item>
+                <Dropdown.Item onClick={handleSelect}> Something else</Dropdown.Item>
               </DropdownButton>
             </ListGroupItem>
             <ListGroupItem>${price}</ListGroupItem>
