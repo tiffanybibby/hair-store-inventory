@@ -96,20 +96,20 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      8hrs      |     16hrs     |             |
-| Airtable setup            |    H     |      1hr       |     1.5hrs    |             |
-| Pseudocode                |    H     |      2hrs      |      2hrs      |             |
-| Clickable icons           |    H     |      4hrs      |      4hrs     |             |
-| Data population           |    H     |      5hrs      |      5hrs     |             |
-| Form creation             |    H     |      4hrs      |      3hrs     |             |
-| Data editing              |    H     |      3hrs      |      8hrs     |             |
-| Data creation             |    H     |      5hrs      |     4hrs       |             |
-| Data deletion             |    H     |      2hrs      |       8hrs     |             |
-| Component Library Styling |    H     |      8hrs      |    20hrs       |             |
-| Organizing code           |    H     |      4hrs      |      2hrs      |             |
-| Polishing Design          |    H     |      3hrs      |       4hrs     |             |
-| Debugging                 |    H     |      5hrs      |     3hrs       |             |
-| Testing                   |    H     |      3hrs      |       2hrs     |             |
-| Total                     |    H     |      57hrs     |    82.5 hrs   |             |
+| Proposal                  |    H     |      8hrs      |     16hrs     |      16hrs  |
+| Airtable setup            |    H     |      1hr       |     1.5hrs    |      1.5hrs |
+| Pseudocode                |    H     |      2hrs      |      2hrs     |      2hrs   |
+| Clickable icons           |    H     |      4hrs      |      4hrs     |      4hrs   |
+| Data population           |    H     |      5hrs      |      5hrs     |      5hrs   |
+| Form creation             |    H     |      4hrs      |      3hrs     |      3hrs   |
+| Data editing              |    H     |      3hrs      |      8hrs     |      8hrs   |
+| Data creation             |    H     |      5hrs      |      4hrs     |      4hrs   |
+| Data deletion             |    H     |      2hrs      |      8hrs     |      8hrs   |
+| Component Library Styling |    H     |      8hrs      |      20hrs    |      20hrs  |
+| Organizing code           |    H     |      4hrs      |      2hrs     |      2hrs   |
+| Polishing Design          |    H     |      3hrs      |      4hrs     |      4hrs   |
+| Debugging                 |    H     |      5hrs      |      3hrs     |      3hrs   |
+| Testing                   |    H     |      3hrs      |      2hrs     |      2hrs   |
+| Total                     |    H     |      57hrs     |    82.5 hrs   |    82.5 hrs |
 
 
