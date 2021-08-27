@@ -3,23 +3,20 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
-import "./App.css";
+import GlobalNavbar from "./components/GlobalNavbar";
 import Wefts from "./components/Wefts";
 import Forms from "./components/Forms.jsx";
-import Bootstrap from "./components/Bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 
-function App() {
+export default function App() {
   const [wefts, setWefts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
     const fetchWefts = async () => {
       const resp = await axios.get(baseURL, config);
-
-      console.log(resp.data.records);
       setWefts(resp.data.records);
     };
     fetchWefts();
@@ -27,14 +24,14 @@ function App() {
 
   return (
     <>
-      <nav><Bootstrap /></nav>
+      <nav><GlobalNavbar/></nav>
       <Route path="/" exact>
         <div style={{ margin: "auto", width: "60%" }}>
         <Row xs={1} md={2} className="g-4" style={{ margin: "10px"}}>
-          {Array.from({ length: 1 }).map((_, idx) => (
+          {Array.from({ length: 1 }).map((_, idx, index) => (
             <>
               <Col>
-                <Card style={{ height: "100%" }}>
+                <Card key={index} style={{ height: "100%" }}>
                   <Card.Img
                     variant="top"
                     src="https://cdn.accentuate.io/74441857/1611603969512/collection-human-hair-wefts.jpg?v=0"
@@ -97,9 +94,9 @@ function App() {
             {Array.from({ length: 1 }).map((_, idx) => (
               <>
                 {wefts.map((weft, index) => (
-                  <React.Fragment key={index}>
+                  <React.Fragment>
                     <Col>
-                      <Card style={{ height: "100%" , width: "100%" }}>
+                      <Card key={index} style={{ height: "100%" , width: "100%" }}>
                         <Card.Img
                           variant="top"
                           src={weft.fields.image}
@@ -142,5 +139,3 @@ function App() {
     </>
   );
 }
-
-export default App;

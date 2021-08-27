@@ -106,10 +106,10 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 | Data creation             |    H     |      5hrs      |      4hrs     |      4hrs   |
 | Data deletion             |    H     |      2hrs      |      8hrs     |      8hrs   |
 | Component Library Styling |    H     |      8hrs      |      20hrs    |      20hrs  |
-| Organizing code           |    H     |      4hrs      |      2hrs     |      2hrs   |
-| Polishing Design          |    H     |      3hrs      |      4hrs     |      4hrs   |
+| Organizing code           |    H     |      4hrs      |      3hrs     |      3hrs   |
+| Polishing Design          |    H     |      3hrs      |      5hrs     |      5hrs   |
 | Debugging                 |    H     |      5hrs      |      3hrs     |      3hrs   |
 | Testing                   |    H     |      3hrs      |      2hrs     |      2hrs   |
-| Total                     |    H     |      57hrs     |    82.5 hrs   |    82.5 hrs |
+| Total                     |    H     |      57hrs     |    84.5 hrs   |    84.5 hrs |
 
 

@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
 
-export default function Bootstrap() {
+export default function GlobalNavbar() {
 
   return (<>
     <>
@@ -12,10 +12,8 @@ export default function Bootstrap() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/new">Add Product</Nav.Link>
               <NavDropdown title="Menu" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/wefts">All Wefts</NavDropdown.Item>
-                <NavDropdown.Item href="/">All Wigs (Post MVP)</NavDropdown.Item>
-                {/* <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
+                <NavDropdown.Item key="option-1" href="/wefts">All Wefts</NavDropdown.Item>
+                <NavDropdown.Item key="option-2" href="/">All Wigs (Post MVP)</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             </Navbar.Collapse>
@@ -33,6 +31,5 @@ export default function Bootstrap() {
           </Container>
       </Navbar>
     </>
-
   </>)
 }

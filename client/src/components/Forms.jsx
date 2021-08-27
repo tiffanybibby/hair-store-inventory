@@ -4,7 +4,7 @@ import { baseURL, config } from '../services'
 import { useParams, useHistory } from 'react-router-dom'
 import { Form, Button, Container } from "react-bootstrap"
 
-function Forms(props) {
+export default function Forms(props) {
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
   const [length, setLength] = useState('')
@@ -16,9 +16,7 @@ function Forms(props) {
 
   useEffect(() => {
     if (params.id && props.wefts.length > 0) {
-      console.log("inside useEffect of Form component")
       const weftToEdit = props.wefts.find(weft => params.id === weft.id)
-      console.log(params.id)
       
       if (weftToEdit) {
         setName(weftToEdit.fields.name)
@@ -79,7 +77,4 @@ function Forms(props) {
       </Container>
   
   )
-  
   }
-  
-  export default Forms;
