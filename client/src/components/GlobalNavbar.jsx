@@ -2,7 +2,7 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
 
 export default function GlobalNavbar() {
 
-  return (<>
+  return (
     <>
       <Navbar bg="light" variant="light" expand="sm">
         <Container style={{width:"70%"}}>
@@ -31,5 +31,5 @@ export default function GlobalNavbar() {
           </Container>
       </Navbar>
     </>
-  </>)
+)
 }

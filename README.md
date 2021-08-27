@@ -90,7 +90,7 @@ Online hair store inventory App utilizing Airtable and React to allow the user t
 |August 24| CSS Components | Complete
 |August 25| Initial Clickable Model / MVP | Complete
 |August 26| Advanced Styling / Testing / Debugging | Complete
-|August 27| Presentations | Incomplete
+|August 27| Presentations | Complete
 
 ## Timeframes
 
