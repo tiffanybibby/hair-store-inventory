@@ -60,7 +60,7 @@ export default function Forms(props) {
         </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicLength">
     <Form.Label>Length</Form.Label>
-    <Form.Control type="text" placeholder="Enter Length of Product" value={length}  onChange={e => setLength(e.target.value)}/>
+    <Form.Control type="number" placeholder="Enter Length of Product" value={length}  onChange={e => setLength(e.target.valueAsNumber)}/>
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicPrice">
     <Form.Label>Price</Form.Label>

@@ -1,7 +1,6 @@
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function ShowWefts(props) {
-
   
     return(
   <>
@@ -31,7 +30,6 @@ export default function ShowWefts(props) {
                       >
                         View Details
                       </Button>
-                      {/* <Button style={{ marginTop: "5px", width: "100%" }} onClick={handleDelete}>Delete</Button> */}
                     </Card.Body>
                   </Card>
                 </Col>
