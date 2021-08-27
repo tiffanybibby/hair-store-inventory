@@ -53,9 +53,9 @@ export default function Wefts(props) {
           </Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroupItem>
-                <DropdownButton key="dropdown-button" id="dropdown-button-light" variant="secondary" size="sm"  title={(value === 0) ? "Length" : value } onClick={handleSelect} > 
-                  <Dropdown.Item key="option-1" onClick={handleSelect}>{length} inch</Dropdown.Item>
-                  <Dropdown.Item key="option-2" onClick={handleValueChange}>{length + 2} inch</Dropdown.Item>
+                <DropdownButton key="dropdown-button" id="dropdown-button-light" variant="secondary" size="sm"  title={(value === 0) ? "Lengths" : value } onClick={handleSelect} > 
+                  <Dropdown.Item key="option-1" onClick={handleSelect}>{length}"</Dropdown.Item>
+                  <Dropdown.Item key="option-2" onClick={handleValueChange}>{length + 2}"</Dropdown.Item>
               </DropdownButton>
             </ListGroupItem>
               <ListGroupItem key="price">${price}</ListGroupItem>
