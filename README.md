@@ -1,4 +1,4 @@
-# [Hair Store Inventory](https://github.com/tiffanybibby/hair-store-inventory)
+# [Hair Store Inventory](https://hair-store-inventory.netlify.app/)
 
 
 ## Project Description
